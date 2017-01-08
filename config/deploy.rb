@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock "3.7.1"
 
-server '54.223.24.28', roles: [:web, :app, :db], primary: true
+server '54.223.24.28', user: "ubuntu", roles: [:web, :app, :db], primary: true
 
 set :application, "test_pg"
 set :user, "ubuntu"

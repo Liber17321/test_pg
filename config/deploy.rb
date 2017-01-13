@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock "3.7.1"
 
-server '54.223.24.28', user: "ubuntu", roles: [:web, :app, :db], primary: true
+server '54.223.49.232', user: "ubuntu", roles: [:web, :app, :db], primary: true
 
 set :application, "test_pg"
 set :user, "ubuntu"
@@ -81,7 +81,7 @@ namespace :deploy do
   before :starting, :check_revision
   after :finishing, :compile_assets
   after :finishing, :cleanup
-  after :finishing, :restart
+  # after :finishing, :restart
 end
 # ps aux | grep puma # Get puma pid
 # kill -s SIGUSR2 pid # Restart puma

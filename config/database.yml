@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   database: test_pg_production
-  username: my_app_user
+  username: test_pg_user
   password: voldemort
-  host: scaletest1.ccaks52zc3v4.rds.cn-north-1.amazonaws.com.cn
+  host: mydbinstance.ccaks52zc3v4.rds.cn-north-1.amazonaws.com.cn
